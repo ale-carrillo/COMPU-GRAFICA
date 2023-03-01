@@ -1,7 +1,7 @@
 # COMPU-GRAFICA
 ## Prácticas y proyectos de Laboratorio de Computación Gráfica
 
-main Carpeta -> Práctica # / Práctica #
+main Carpeta -> Práctica # / Práctica #  
 external -> Práctica #
 
 ## A R C H I V O S  
