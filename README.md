@@ -18,3 +18,11 @@ Header Files -> Shader -> shader.h
 
 ### VINCULADOR ENTRADA (Dependencias adicionales)  
 opengl32.lib;glew32.lib;glfw3.lib;
+
+
+
+
+
+
+CGIHC06
+cg06.
