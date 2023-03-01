@@ -1,0 +1,16 @@
+Coordenadas de objeto
+
+la matriz de proyección ya abarca lo que queramos
+coordenadas de camara
+
+Proyección ortografica // Plano paralelo rectangular, tiene plano de proyección, se estampan las imagenes
+-> espacio en 2D
+glm::ortho(xmin,xmax,ymin,ymax,zmin,zmax)
+
+glorthon y no se que, ya no existen
+
+Proyección perspectiva // Punto de observador, centro de proyección
+radio de aspecto -> altura entre la altura
+znear: donde empiezas a marcar tu piramide
+
+glm:: perspective(FOV, Radio de aspecto, radio de aspecto, znear, zfar)
