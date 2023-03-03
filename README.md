@@ -24,5 +24,5 @@ opengl32.lib;glew32.lib;glfw3.lib;
 
 
 
-CGIHC06
+CGIH06
 cg06.
