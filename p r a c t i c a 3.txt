@@ -1,0 +1,10 @@
+Espacio tridimensional
+
+puntp, arista o linea y triangulo
+
+Transformaciones basicas:
+glm::translate(matriz,vec3)
+glm::rotate(matriz, ángulo, vec3)
+glm::escala(matriz, vec3)
+
+EL ORDEN DE LAS TRANSFORMACIONES ES IMPORTANTE
