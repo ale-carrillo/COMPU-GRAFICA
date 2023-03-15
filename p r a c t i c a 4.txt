@@ -1,0 +1,14 @@
+O R D E N DE TRANSFORMACIONES ES IMPORTANTE
+
+Modelado jerarquico -> parecido a un arbol
+tiene solo un padre
+
+Agaramos una rama principal en la cual creamos hijmos y dependencias
+
+mattriz aux para hacer las dependencias
+
+
+P I V O T E
+punto con respecto al cual voy a hacer la rotación
+
+AUTODESK
