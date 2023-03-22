@@ -1,0 +1,26 @@
+PARA TEXTURIXAR
+
+circulo de ajedrez xd
+
+PARA MOVER ALT+CLICKIZQ
+
+w -> desplazamento
+
+r -> hace referencia a la escala
+
+Necesitamos separar para poder animar
+shift mas caras o shift mas marcado con click izq
+
+
+edit match didatch
+
+mash separate
+
+
+Para acomodar el pivote, dejamos el centro de todo el mundo del sw de modelado
+TECLA D -> permiteacomodar el pivote donde lo necesito
+
+
+CREAR CARPETA EN MODELS LLAMADO DORY, ahi gaurdas el obj
+file, export selection -> guardar en la carpeta
+guardar el obj "colafish"
