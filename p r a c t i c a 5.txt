@@ -1,0 +1,13 @@
+TEXTURIZADO
+
+> condiciones de imagenes
+  Deben de ser potencias de 2
+  Tiene que ser un tamaño cuadrado
+  Imagenes JPG o PNG
+    PNG. Se le puede quitar el fondo, no tener fondo (RGB A) A de transparencia
+    JPG. Se le puede quitar el fondo pero pss noo es la mejor opción, además es más pesada
+
+> Espacio UV
+  Va de cero a uno, el mapeado completo de la imagen
+  [0,1] [1,1]
+  [0,0] [1,0]
