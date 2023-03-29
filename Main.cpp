@@ -36,12 +36,12 @@ Camera camera( glm::vec3( 0.0f, 0.0f, 3.0f ) );
 bool keys[1024];
 GLfloat lastX = 400, lastY = 300;
 bool firstMouse = true;
-bool animFish = false;
-float rotFish;
 
 GLfloat deltaTime = 0.0f;
 GLfloat lastFrame = 0.0f;
 
+float rot = 0;
+bool anim = false;
 
 
 int main( )
@@ -96,8 +96,10 @@ int main( )
     Shader shader( "Shaders/modelLoading.vs", "Shaders/modelLoading.frag" );
     
     // Load models
+    Model pokeArriba((char*)"Models/pokebol/pokeArriba.obj");
+    Model pokeAbajo((char*)"Models/pokebol/pokeAbajo.obj");
     glm::mat4 projection = glm::perspective( camera.GetZoom( ), ( float )SCREEN_WIDTH/( float )SCREEN_HEIGHT, 0.1f, 100.0f );
-    Model fish((char*)"Models/Fishes/TropicalFish12.obj");
+    
   
 
     // Game loop
@@ -124,9 +126,13 @@ int main( )
 
         // Draw the loaded model
         glm::mat4 model(1);
-        // model = glm::rotate(model, glm::radians(rotFish),);
+        model = glm::rotate(model, glm::radians(-rot), glm::vec3(1.0, 0.0f, 0.0f));
         glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
-        fish.Draw(shader);
+        pokeArriba.Draw(shader);
+
+        model = glm::mat4(1);
+        glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
+        pokeAbajo.Draw(shader);
 
         // Swap the buffers
         glfwSwapBuffers( window );
@@ -145,10 +151,7 @@ void DoMovement( )
     {
         camera.ProcessKeyboard( FORWARD, deltaTime );
     }
-    if (keys[GLFW_KEY_SPACE])
-    {
-        animFish != animFish;
-    }
+    
     if ( keys[GLFW_KEY_S] || keys[GLFW_KEY_DOWN] )
     {
         camera.ProcessKeyboard( BACKWARD, deltaTime );
@@ -163,8 +166,10 @@ void DoMovement( )
     {
         camera.ProcessKeyboard( RIGHT, deltaTime );
     }
-    if (animFish) {
-        rotFish += 0.1f;
+
+    if (anim) {
+        if (rot < 90.0f)
+            rot += 0.5f;
     }
    
 }
@@ -189,7 +194,9 @@ void KeyCallback( GLFWwindow *window, int key, int scancode, int action, int mod
         }
     }
 
- 
+    if (keys[GLFW_KEY_SPACE]) {
+        anim = !anim;
+    }
 
  
 }
