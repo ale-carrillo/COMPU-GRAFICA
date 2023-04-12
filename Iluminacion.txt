@@ -1,0 +1,26 @@
+3 componentes
+  Ambiental: Ilumina al escenario en todas direcciones, luz del sol y la luna, etc. Solo interesa la dirección
+
+  Difusa: Ases de luz desde cualquier objeto
+
+  Especular: Simular punto brillante
+  
+  SUMADOS NOS DA EL MODELO DE ILUMINACIÓN DE FONDO
+  
+Material -> comportamiento que tiene todo objeto que interactua con la iluminación
+
+Tiene 
+componente ambiental -> mismo color del objeto
+difusa -> color que da el objeto ()
+especular -> brillo que establece
+
+
+Iluminación
+  Ambiental -> Difusa o ambiental aprox difusa
+  Especular -> Gris o blanca
+  Brillo -> Tamaño del punto
+
+
+PLATEADO
+AZUL
+ROJO
